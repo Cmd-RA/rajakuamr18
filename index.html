@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✅ SEO Meta Tags -->
+  <title>RajaKumar18 - Video Platform | वीडियो देखें और कमाएं</title>
+  <meta name="description" content="RajaKumar18 एक भारतीय वीडियो प्लेटफॉर्म है जहाँ आप वीडियो देख सकते हैं, अपलोड कर सकते हैं और पैसे कमा सकते हैं।" />
+  <meta name="keywords" content="video platform india, video upload, earn money, rajakumar18, hindi videos, entertainment, monetization" />
+  <meta name="author" content="RajaKumar18" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rajakumar18.in/" />
+
+  <!-- ✅ Open Graph (Facebook/WhatsApp sharing) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="RajaKumar18 - Video Platform" />
+  <meta property="og:description" content="भारत का अपना वीडियो प्लेटफॉर्म — देखो, अपलोड करो, कमाओ!" />
+  <meta property="og:url" content="https://rajakumar18.in/" />
+  <meta property="og:image" content="https://rajakumar18.in/og-image.jpg" />
+  <meta property="og:site_name" content="RajaKumar18" />
+  <meta property="og:locale" content="hi_IN" />
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RajaKumar18 - Video Platform" />
+  <meta name="twitter:description" content="भारत का अपना वीडियो प्लेटफॉर्म — देखो, अपलोड करो, कमाओ!" />
+  <meta name="twitter:image" content="https://rajakumar18.in/og-image.jpg" />
+
+  <!-- ✅ PWA Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#e50914" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="RajaKumar18" />
+  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/png" href="/icons/icon-192.png" />
+
+  <!-- ✅ Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- ✅ Google AdSense (replace with your publisher ID) -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <style>
+    :root {
+      --red: #e50914;
+      --red-dark: #b20710;
+      --gold: #f5a623;
+      --bg: #0a0a0a;
+      --bg2: #141414;
+      --bg3: #1e1e1e;
+      --bg4: #2a2a2a;
+      --text: #f0f0f0;
+      --text2: #aaa;
+      --border: #333;
+      --font-main: 'Baloo 2', 'Noto Sans Devanagari', sans-serif;
+      --radius: 10px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.5);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-main);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center;
+      justify-content: space-between;
+      padding: 0 16px; height: 58px;
+    }
+    .logo {
+      font-size: 1.5rem; font-weight: 800;
+      color: var(--red); letter-spacing: -0.5px;
+    }
+    .logo span { color: var(--gold); }
+
+    .header-right { display: flex; align-items: center; gap: 10px; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 7px 16px; border-radius: 50px;
+      font-family: var(--font-main); font-size: 0.85rem; font-weight: 700;
+      cursor: pointer; border: none; transition: all 0.2s;
+    }
+    .btn-red { background: var(--red); color: #fff; }
+    .btn-red:hover { background: var(--red-dark); transform: scale(1.04); }
+    .btn-outline {
+      background: transparent; color: var(--text);
+      border: 1.5px solid var(--border);
+    }
+    .btn-outline:hover { border-color: var(--red); color: var(--red); }
+    .btn-gold { background: var(--gold); color: #000; }
+    .btn-gold:hover { background: #e09610; transform: scale(1.04); }
+
+    /* ── INSTALL BANNER ── */
+    #installBanner {
+      display: none;
+      background: linear-gradient(90deg, var(--red), #ff6b35);
+      padding: 10px 16px;
+      align-items: center; justify-content: space-between; gap: 10px;
+      flex-wrap: wrap;
+    }
+    #installBanner p { font-size: 0.9rem; font-weight: 600; }
+    #installBanner.show { display: flex; }
+
+    /* ── HERO BANNER ── */
+    .hero {
+      background: linear-gradient(135deg, #1a0000 0%, #0a0a0a 50%, #0d0d1a 100%);
+      padding: 48px 16px 32px;
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(229,9,20,0.15) 0%, transparent 70%);
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 6vw, 3rem);
+      font-weight: 800; line-height: 1.2;
+      margin-bottom: 12px; position: relative;
+    }
+    .hero h1 span { color: var(--red); }
+    .hero p {
+      color: var(--text2); font-size: 1rem;
+      max-width: 500px; margin: 0 auto 24px; position: relative;
+    }
+    .hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; position: relative; }
+
+    /* ── NOTIFICATION BAR ── */
+    .notif-bar {
+      background: var(--bg3);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 16px;
+      display: flex; align-items: center; gap: 12px;
+      flex-wrap: wrap; font-size: 0.85rem;
+    }
+    .notif-bar span { color: var(--text2); flex: 1 1 auto; }
+    .notif-links { display: flex; gap: 8px; flex-wrap: wrap; }
+    .notif-links a {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 5px 12px; border-radius: 50px;
+      font-size: 0.8rem; font-weight: 700;
+      border: 1.5px solid var(--border); transition: all 0.2s;
+    }
+    .notif-links a.wa { border-color: #25d366; color: #25d366; }
+    .notif-links a.wa:hover { background: #25d366; color: #000; }
+    .notif-links a.tg { border-color: #0088cc; color: #0088cc; }
+    .notif-links a.tg:hover { background: #0088cc; color: #fff; }
+
+    /* ── TABS ── */
+    .tabs {
+      display: flex; gap: 0; overflow-x: auto;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+      padding: 0 16px;
+      scrollbar-width: none;
+    }
+    .tabs::-webkit-scrollbar { display: none; }
+    .tab {
+      padding: 14px 18px; font-size: 0.9rem; font-weight: 700;
+      cursor: pointer; white-space: nowrap; border: none;
+      background: none; color: var(--text2);
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s; font-family: var(--font-main);
+    }
+    .tab:hover { color: var(--text); }
+    .tab.active { color: var(--red); border-bottom-color: var(--red); }
+
+    /* ── TRENDING BADGE ── */
+    .trending-label {
+      display: flex; align-items: center; gap: 8px;
+      padding: 14px 16px 4px;
+      font-size: 1rem; font-weight: 800;
+      color: var(--gold);
+    }
+    .trending-label::before { content: '🔥'; }
+
+    /* ── VIDEO GRID ── */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px; padding: 12px 16px 24px;
+    }
+
+    .video-card {
+      background: var(--bg2);
+      border-radius: var(--radius);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid var(--border);
+    }
+    .video-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+      border-color: var(--red);
+    }
+    .video-thumb {
+      position: relative; aspect-ratio: 16/9;
+      background: var(--bg3); overflow: hidden;
+    }
+    .video-thumb img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .video-card:hover .video-thumb img { transform: scale(1.05); }
+    .video-duration {
+      position: absolute; bottom: 6px; right: 8px;
+      background: rgba(0,0,0,0.85);
+      color: #fff; font-size: 0.72rem; font-weight: 700;
+      padding: 2px 6px; border-radius: 4px;
+    }
+    .trending-crown {
+      position: absolute; top: 8px; left: 8px;
+      background: var(--gold); color: #000;
+      font-size: 0.7rem; font-weight: 800;
+      padding: 3px 8px; border-radius: 50px;
+    }
+    .video-info { padding: 10px 12px; }
+    .video-channel {
+      display: flex; align-items: center; gap: 8px; margin-bottom: 6px;
+    }
+    .channel-avatar {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--red); display: flex; align-items: center;
+      justify-content: center; font-size: 0.85rem; font-weight: 800;
+      flex-shrink: 0; color: #fff;
+    }
+    .video-title {
+      font-size: 0.92rem; font-weight: 700; line-height: 1.3;
+      color: var(--text); margin-bottom: 6px;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .video-meta {
+      font-size: 0.78rem; color: var(--text2);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .video-actions {
+      display: flex; align-items: center; gap: 10px;
+      padding: 8px 12px; border-top: 1px solid var(--border);
+    }
+    .like-btn {
+      display: flex; align-items: center; gap: 4px;
+      background: none; border: none; color: var(--text2);
+      font-size: 0.82rem; cursor: pointer;
+      font-family: var(--font-main); transition: all 0.15s;
+      padding: 4px 8px; border-radius: 50px;
+    }
+    .like-btn:hover { background: rgba(255,50,50,0.1); color: #ff4444; }
+    .like-btn.liked { color: #ff4444; }
+    .like-btn.liked .heart { filter: drop-shadow(0 0 4px #ff4444); }
+    .share-btn {
+      display: flex; align-items: center; gap: 4px;
+      background: none; border: none; color: var(--text2);
+      font-size: 0.82rem; cursor: pointer;
+      font-family: var(--font-main); transition: all 0.15s;
+      padding: 4px 8px; border-radius: 50px; margin-left: auto;
+    }
+    .share-btn:hover { background: rgba(0,136,204,0.1); color: #0088cc; }
+
+    /* ── VIDEO PLAYER MODAL ── */
+    #playerModal {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(0,0,0,0.95);
+      flex-direction: column;
+    }
+    #playerModal.show { display: flex; }
+    .player-header {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+    .player-close {
+      background: none; border: none; color: var(--text);
+      font-size: 1.6rem; cursor: pointer; line-height: 1;
+    }
+    .player-title { font-size: 1rem; font-weight: 700; flex: 1; }
+    .player-body { flex: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .player-body iframe, .player-body video {
+      width: 100%; max-height: 80vh;
+      aspect-ratio: 16/9; border: none; background: #000;
+    }
+    .player-footer {
+      padding: 12px 16px;
+      border-top: 1px solid var(--border);
+      display: flex; align-items: center; gap: 10px;
+    }
+
+    /* ── HEARTS ANIMATION ── */
+    .heart-anim {
+      position: fixed; pointer-events: none; z-index: 300;
+      font-size: 2rem; animation: floatHeart 1.2s ease-out forwards;
+    }
+    @keyframes floatHeart {
+      0% { opacity: 1; transform: translateY(0) scale(1); }
+      100% { opacity: 0; transform: translateY(-100px) scale(1.8); }
+    }
+
+    /* ── UPLOAD MODAL ── */
+    #uploadModal {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(0,0,0,0.85);
+      align-items: center; justify-content: center;
+    }
+    #uploadModal.show { display: flex; }
+    .modal-box {
+      background: var(--bg2);
+      border-radius: 16px; padding: 28px;
+      width: min(480px, 94vw);
+      border: 1px solid var(--border);
+      max-height: 90vh; overflow-y: auto;
+    }
+    .modal-box h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: 20px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 0.85rem; font-weight: 700; color: var(--text2); margin-bottom: 6px; }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%; padding: 10px 14px;
+      background: var(--bg3); border: 1.5px solid var(--border);
+      border-radius: var(--radius); color: var(--text);
+      font-family: var(--font-main); font-size: 0.92rem;
+      transition: border-color 0.2s; outline: none;
+    }
+    .form-group input:focus, .form-group textarea:focus { border-color: var(--red); }
+    .form-group textarea { resize: vertical; min-height: 80px; }
+    .modal-footer { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+
+    /* ── AUTH MODAL ── */
+    #authModal {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(0,0,0,0.85);
+      align-items: center; justify-content: center;
+    }
+    #authModal.show { display: flex; }
+    .auth-tabs { display: flex; border-bottom: 1px solid var(--border); margin-bottom: 20px; }
+    .auth-tab {
+      flex: 1; padding: 12px; text-align: center;
+      font-weight: 700; cursor: pointer;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s; background: none; border: none;
+      color: var(--text2); font-family: var(--font-main);
+      font-size: 0.95rem;
+    }
+    .auth-tab.active { color: var(--red); border-bottom: 3px solid var(--red); }
+
+    /* ── MONETIZATION MODAL ── */
+    #monetModal {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(0,0,0,0.85);
+      align-items: center; justify-content: center;
+    }
+    #monetModal.show { display: flex; }
+
+    /* ── SECTIONS ── */
+    .section { padding: 40px 16px; }
+    .section-title {
+      font-size: 1.4rem; font-weight: 800;
+      margin-bottom: 20px; display: flex; align-items: center; gap: 8px;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .step-card {
+      background: var(--bg2); border-radius: var(--radius);
+      padding: 20px; border: 1px solid var(--border);
+      text-align: center; transition: border-color 0.2s;
+    }
+    .step-card:hover { border-color: var(--red); }
+    .step-icon { font-size: 2.2rem; margin-bottom: 12px; }
+    .step-card h3 { font-size: 0.95rem; font-weight: 800; margin-bottom: 6px; }
+    .step-card p { font-size: 0.82rem; color: var(--text2); line-height: 1.5; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      padding: 32px 16px 20px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 24px; margin-bottom: 28px;
+    }
+    .footer-col h4 { font-size: 0.9rem; font-weight: 800; color: var(--gold); margin-bottom: 12px; }
+    .footer-col a {
+      display: block; font-size: 0.83rem;
+      color: var(--text2); padding: 3px 0;
+      transition: color 0.2s;
+    }
+    .footer-col a:hover { color: var(--red); }
+    .footer-bottom {
+      text-align: center; font-size: 0.8rem;
+      color: var(--text2); padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── TOAST ── */
+    #toast {
+      position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%);
+      background: var(--bg3); color: var(--text);
+      padding: 10px 20px; border-radius: 50px;
+      font-size: 0.85rem; font-weight: 700;
+      border: 1px solid var(--border);
+      z-index: 400; opacity: 0; transition: opacity 0.3s;
+      white-space: nowrap;
+    }
+    #toast.show { opacity: 1; }
+
+    /* ── BOTTOM NAV (Mobile) ── */
+    .bottom-nav {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      display: flex;
+      z-index: 99;
+    }
+    .nav-item {
+      flex: 1; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 8px 4px;
+      font-size: 0.65rem; font-weight: 700; color: var(--text2);
+      cursor: pointer; transition: color 0.2s;
+      background: none; border: none;
+      font-family: var(--font-main);
+    }
+    .nav-item:hover, .nav-item.active { color: var(--red); }
+    .nav-icon { font-size: 1.4rem; margin-bottom: 2px; }
+    body { padding-bottom: 64px; }
+
+    /* ── LOADING SKELETON ── */
+    .skeleton {
+      background: linear-gradient(90deg, var(--bg3) 25%, var(--bg4) 50%, var(--bg3) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.4s infinite;
+      border-radius: 6px;
+    }
+    @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+    @media (max-width: 480px) {
+      .video-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 1.6rem; }
+    }
+
+    /* ── PAGES (Privacy, About, etc.) ── */
+    .page-content {
+      display: none; max-width: 760px; margin: 0 auto;
+      padding: 32px 16px;
+    }
+    .page-content.active { display: block; }
+    .page-content h1 { font-size: 1.8rem; font-weight: 800; margin-bottom: 8px; }
+    .page-content .last-updated { font-size: 0.8rem; color: var(--text2); margin-bottom: 24px; }
+    .page-content h2 { font-size: 1.1rem; font-weight: 800; margin: 24px 0 10px; color: var(--gold); }
+    .page-content p { font-size: 0.92rem; color: var(--text2); line-height: 1.7; margin-bottom: 10px; }
+    .page-content ul { padding-left: 20px; color: var(--text2); font-size: 0.92rem; line-height: 2; }
+  </style>
+
+  <!-- ✅ JSON-LD Structured Data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RajaKumar18",
+    "url": "https://rajakumar18.in",
+    "description": "भारत का वीडियो प्लेटफॉर्म — देखो, अपलोड करो, कमाओ",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://rajakumar18.in/?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+<!-- ✅ PWA Install Banner -->
+<div id="installBanner">
+  <p>📱 RajaKumar18 App Install करें — Free!</p>
+  <button class="btn btn-gold" id="installBtn">⬇️ Install App</button>
+</div>
+
+<!-- ✅ HEADER -->
+<header>
+  <div class="logo" onclick="showPage('home')" style="cursor:pointer">Raja<span>Kumar18</span></div>
+  <div class="header-right">
+    <button class="btn btn-outline" onclick="openModal('authModal')">Login</button>
+    <button class="btn btn-red" onclick="openModal('uploadModal')">+ Upload</button>
+  </div>
+</header>
+
+<!-- ✅ MAIN CONTENT -->
+<div id="mainHome">
+
+  <!-- Notification Bar -->
+  <div class="notif-bar">
+    <span>🔔 नई Videos के लिए Follow करें:</span>
+    <div class="notif-links">
+      <a class="wa" href="https://whatsapp.com/channel/0029VbCHva3Ae5VxC8fpS51N" target="_blank" rel="noopener">
+        💬 WhatsApp
+      </a>
+      <a class="tg" href="https://t.me/rajakumar18ni" target="_blank" rel="noopener">
+        ✈️ Telegram
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>🎬 देखो, अपलोड करो,<br /><span>पैसे कमाओ!</span></h1>
+    <p>भारत का अपना वीडियो प्लेटफॉर्म — बिल्कुल Free में Channel बनाओ और Earning शुरू करो।</p>
+    <div class="hero-btns">
+      <button class="btn btn-red" onclick="openModal('authModal')">🚀 अभी शुरू करें</button>
+      <button class="btn btn-gold" onclick="scrollToVideos()">▶️ Videos देखें</button>
+    </div>
+  </section>
+
+  <!-- TABS -->
+  <div class="tabs" id="videoTabs">
+    <button class="tab active" onclick="filterVideos('all', this)">🏠 सभी</button>
+    <button class="tab" onclick="filterVideos('trending', this)">🔥 Trending</button>
+    <button class="tab" onclick="filterVideos('entertainment', this)">🎭 Entertainment</button>
+    <button class="tab" onclick="filterVideos('education', this)">📚 Education</button>
+    <button class="tab" onclick="filterVideos('comedy', this)">😂 Comedy</button>
+    <button class="tab" onclick="filterVideos('music', this)">🎵 Music</button>
+  </div>
+
+  <!-- VIDEO SECTION -->
+  <div id="videoSection">
+    <div class="trending-label">Trending Videos</div>
+    <div class="video-grid" id="videoGrid">
+      <!-- Videos injected by JS -->
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" style="background: var(--bg2); border-top: 1px solid var(--border);">
+    <div class="section-title">⚙️ यह कैसे काम करता है?</div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-icon">👤</div>
+        <h3>Account बनाएं</h3>
+        <p>Free में Sign Up करें और अपना Channel बनाएं।</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">🎥</div>
+        <h3>Video Upload करें</h3>
+        <p>अपनी Video Upload करें — Telegram पर सुरक्षित Store होगी।</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">💰</div>
+        <h3>Monetization ON करें</h3>
+        <p>Bank Details डालें, Admin Approve करेगा, फिर Earning शुरू!</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">📱</div>
+        <h3>App Install करें</h3>
+        <p>Install Button दबाएं और Phone में App की तरह use करें।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MONETIZATION CTA -->
+  <section class="section" style="text-align: center;">
+    <div class="section-title" style="justify-content: center;">💸 Monetization शुरू करें</div>
+    <p style="color: var(--text2); margin-bottom: 20px; max-width: 480px; margin-left: auto; margin-right: auto;">
+      अपने Videos से सीधे Bank Account में पैसे कमाएं। Admin Approval के बाद Earning शुरू होती है।
+    </p>
+    <button class="btn btn-gold" style="font-size: 1rem; padding: 12px 32px;" onclick="openModal('monetModal')">
+      💰 Monetize करें
+    </button>
+  </section>
+
+</div>
+
+<!-- ✅ STATIC PAGES (Privacy, About, etc.) -->
+<div id="pagePrivacy" class="page-content">
+  <h1>🔒 Privacy Policy</h1>
+  <p class="last-updated">Last Updated: January 2025</p>
+  <p>RajaKumar18 ("हम", "हमारी वेबसाइट") आपकी privacy को बहुत गंभीरता से लेता है। यह Privacy Policy बताती है कि हम आपकी जानकारी कैसे collect, use और protect करते हैं।</p>
+  <h2>1. हम क्या जानकारी Collect करते हैं?</h2>
+  <ul>
+    <li>नाम और Email address (Registration के समय)</li>
+    <li>मोबाइल नंबर और Bank Details (केवल Monetization के लिए)</li>
+    <li>Upload की गई Videos</li>
+    <li>Website Usage Data (Cookies के माध्यम से)</li>
+  </ul>
+  <h2>2. जानकारी का उपयोग</h2>
+  <p>आपकी जानकारी का उपयोग केवल Platform के संचालन, Monetization Approval, और बेहतर User Experience के लिए किया जाता है।</p>
+  <h2>3. Third-Party Services</h2>
+  <p>हम Google AdSense और Telegram API का उपयोग करते हैं। इनकी अपनी Privacy Policies हैं।</p>
+  <h2>4. Data Security</h2>
+  <p>आपका Bot Token और सभी Sensitive Data GitHub Secrets में सुरक्षित रखा जाता है।</p>
+  <h2>5. Contact</h2>
+  <p>📧 rajahribabakumar@gmail.com | 📞 9682316132</p>
+</div>
+
+<div id="pageContact" class="page-content">
+  <h1>📞 Contact Us</h1>
+  <p class="last-updated">हम 24 घंटे में Reply करते हैं।</p>
+  <h2>📧 Email</h2>
+  <p>rajahribabakumar@gmail.com</p>
+  <h2>📞 Phone</h2>
+  <p>9682316132</p>
+  <h2>💬 WhatsApp Channel</h2>
+  <p><a href="https://whatsapp.com/channel/0029VbCHva3Ae5VxC8fpS51N" style="color: var(--gold);">Join करें</a></p>
+  <h2>✈️ Telegram Channel</h2>
+  <p><a href="https://t.me/rajakumar18ni" style="color: var(--gold);">Join करें</a></p>
+</div>
+
+<div id="pageAbout" class="page-content">
+  <h1>ℹ️ About Us</h1>
+  <p class="last-updated">RajaKumar18 — भारत का अपना Video Platform</p>
+  <p>RajaKumar18 एक भारतीय Video Platform है जो हर भारतीय Content Creator को एक मंच देता है। यहाँ आप अपने Videos Upload कर सकते हैं, देख सकते हैं, और Monetize करके पैसे कमा सकते हैं।</p>
+  <h2>हमारा लक्ष्य</h2>
+  <p>हर भारतीय Creator को एक Fair Platform देना जहाँ उनकी Talent को पहचाना जाए और उन्हें उचित Earning मिले।</p>
+  <h2>Technology</h2>
+  <p>यह Platform Telegram Bot API, GitHub Pages, और Google AdSense के माध्यम से संचालित होता है।</p>
+  <h2>Founder</h2>
+  <p>RajaKumar18 को Rajan Ribabakumar ने बनाया है।<br />📧 rajahribabakumar@gmail.com</p>
+</div>
+
+<div id="pageTerms" class="page-content">
+  <h1>📜 Terms & Conditions</h1>
+  <p class="last-updated">Last Updated: January 2025</p>
+  <p>RajaKumar18 ("Platform") use करके आप इन Terms से सहमत होते हैं।</p>
+  <h2>1. Account</h2>
+  <ul>
+    <li>आपकी उम्र कम से कम 13 वर्ष होनी चाहिए।</li>
+    <li>एक व्यक्ति एक ही Account बना सकता है।</li>
+    <li>गलत जानकारी देने पर Account बंद किया जा सकता है।</li>
+  </ul>
+  <h2>2. Content Policy</h2>
+  <ul>
+    <li>Copyright वाला Content Upload नहीं किया जा सकता।</li>
+    <li>Obscene, violent या illegal content की अनुमति नहीं है।</li>
+    <li>Platform किसी भी Video को बिना कारण बताए हटा सकता है।</li>
+  </ul>
+  <h2>3. Monetization</h2>
+  <p>Monetization Admin के Approval पर निर्भर है। Platform किसी भी Monetization को रद्द करने का अधिकार रखता है।</p>
+  <h2>4. Liability</h2>
+  <p>Platform User द्वारा Upload किए गए Content के लिए जिम्मेदार नहीं है।</p>
+</div>
+
+<!-- ✅ VIDEO PLAYER MODAL -->
+<div id="playerModal">
+  <div class="player-header">
+    <button class="player-close" onclick="closePlayer()">✕</button>
+    <div class="player-title" id="playerTitle">Video</div>
+  </div>
+  <div class="player-body">
+    <div id="playerContent"></div>
+  </div>
+  <div class="player-footer">
+    <button class="like-btn" id="playerLikeBtn" onclick="likeCurrentVideo()">
+      <span class="heart">❤️</span> <span id="playerLikeCount">0</span>
+    </button>
+    <button class="share-btn" onclick="shareVideo()">🔗 Share</button>
+    <button class="btn btn-outline" style="font-size: 0.8rem; padding: 5px 12px; margin-left: auto;" onclick="closePlayer()">✕ बंद करें</button>
+  </div>
+</div>
+
+<!-- ✅ UPLOAD MODAL -->
+<div id="uploadModal">
+  <div class="modal-box">
+    <h2>🎥 Video Upload करें</h2>
+    <div class="form-group">
+      <label>Video Title *</label>
+      <input type="text" id="uploadTitle" placeholder="Video का नाम लिखें" />
+    </div>
+    <div class="form-group">
+      <label>Telegram Video Link (File ID या t.me link) *</label>
+      <input type="text" id="uploadTgLink" placeholder="https://t.me/..." />
+    </div>
+    <div class="form-group">
+      <label>Thumbnail URL (optional)</label>
+      <input type="text" id="uploadThumb" placeholder="https://i.imgur.com/..." />
+    </div>
+    <div class="form-group">
+      <label>Category</label>
+      <select id="uploadCategory">
+        <option value="entertainment">🎭 Entertainment</option>
+        <option value="education">📚 Education</option>
+        <option value="comedy">😂 Comedy</option>
+        <option value="music">🎵 Music</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Duration (e.g. 5:32)</label>
+      <input type="text" id="uploadDuration" placeholder="10:24" />
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="closeModal('uploadModal')">Cancel</button>
+      <button class="btn btn-red" onclick="submitUpload()">🚀 Upload करें</button>
+    </div>
+  </div>
+</div>
+
+<!-- ✅ AUTH MODAL -->
+<div id="authModal">
+  <div class="modal-box">
+    <div class="auth-tabs">
+      <button class="auth-tab active" id="loginTab" onclick="switchAuthTab('login')">Login</button>
+      <button class="auth-tab" id="signupTab" onclick="switchAuthTab('signup')">Sign Up</button>
+    </div>
+    <div id="loginForm">
+      <div class="form-group">
+        <label>Email / Username</label>
+        <input type="text" placeholder="आपका Email" />
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="Password" />
+      </div>
+      <button class="btn btn-red" style="width:100%; justify-content:center;" onclick="showToast('Login Feature Coming Soon! 🚀'); closeModal('authModal')">Login करें</button>
+    </div>
+    <div id="signupForm" style="display:none;">
+      <div class="form-group">
+        <label>पूरा नाम</label>
+        <input type="text" placeholder="आपका नाम" />
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="आपका Email" />
+      </div>
+      <div class="form-group">
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="10-digit number" />
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="Password बनाएं" />
+      </div>
+      <button class="btn btn-red" style="width:100%; justify-content:center;" onclick="showToast('Account बन गया! 🎉'); closeModal('authModal')">Account बनाएं</button>
+    </div>
+    <p style="text-align:center; margin-top: 14px;">
+      <button class="btn btn-outline" style="font-size:0.8rem" onclick="closeModal('authModal')">Cancel</button>
+    </p>
+  </div>
+</div>
+
+<!-- ✅ MONETIZATION MODAL -->
+<div id="monetModal">
+  <div class="modal-box">
+    <h2>💰 Monetization के लिए Apply करें</h2>
+    <p style="font-size: 0.85rem; color: var(--text2); margin-bottom: 18px;">Admin Approval के बाद आपकी Earning शुरू होगी।</p>
+    <div class="form-group">
+      <label>पूरा नाम *</label>
+      <input type="text" placeholder="Bank Account पर जैसा नाम है" />
+    </div>
+    <div class="form-group">
+      <label>Mobile Number *</label>
+      <input type="tel" placeholder="10-digit mobile number" />
+    </div>
+    <div class="form-group">
+      <label>Bank Account Number *</label>
+      <input type="text" placeholder="Account Number" />
+    </div>
+    <div class="form-group">
+      <label>IFSC Code *</label>
+      <input type="text" placeholder="IFSC Code" />
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="closeModal('monetModal')">Cancel</button>
+      <button class="btn btn-gold" onclick="showToast('Application Submit! Admin Review करेगा। 📋'); closeModal('monetModal')">Submit करें</button>
+    </div>
+  </div>
+</div>
+
+<!-- ✅ FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>🎬 RajaKumar18</h4>
+      <p style="font-size: 0.82rem; color: var(--text2); line-height: 1.6;">भारत का अपना Video Platform। देखो, अपलोड करो, कमाओ!</p>
+    </div>
+    <div class="footer-col">
+      <h4>Platform</h4>
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="openModal('uploadModal')">Video Upload</a>
+      <a href="#" onclick="openModal('monetModal')">Monetization</a>
+      <a href="#" onclick="openModal('authModal')">Sign Up</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#" onclick="showPage('privacy')">Privacy Policy</a>
+      <a href="#" onclick="showPage('terms')">Terms & Conditions</a>
+      <a href="#" onclick="showPage('about')">About Us</a>
+      <a href="#" onclick="showPage('contact')">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Follow करें</h4>
+      <a href="https://whatsapp.com/channel/0029VbCHva3Ae5VxC8fpS51N" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <a href="https://t.me/rajakumar18ni" target="_blank" rel="noopener">✈️ Telegram</a>
+      <a href="mailto:rajahribabakumar@gmail.com">📧 Email</a>
+      <a href="tel:9682316132">📞 Call</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2025 RajaKumar18.in — All Rights Reserved | Made with ❤️ in India
+  </div>
+</footer>
+
+<!-- ✅ BOTTOM NAV -->
+<nav class="bottom-nav">
+  <button class="nav-item active" onclick="showPage('home')">
+    <span class="nav-icon">🏠</span>Home
+  </button>
+  <button class="nav-item" onclick="filterVideos('trending', null)">
+    <span class="nav-icon">🔥</span>Trending
+  </button>
+  <button class="nav-item" onclick="openModal('uploadModal')">
+    <span class="nav-icon">➕</span>Upload
+  </button>
+  <button class="nav-item" onclick="openModal('monetModal')">
+    <span class="nav-icon">💰</span>Earn
+  </button>
+  <button class="nav-item" onclick="openModal('authModal')">
+    <span class="nav-icon">👤</span>Account
+  </button>
+</nav>
+
+<!-- ✅ TOAST -->
+<div id="toast"></div>
+
+<script>
+// ──────────────────────────────────────────
+// DEMO VIDEO DATA (Replace with Telegram Bot API)
+// ──────────────────────────────────────────
+const videosDB = [
+  {
+    id: 1, title: "India का सबसे बड़ा Dance Show 2025",
+    channel: "RajaKumar18", avatar: "R",
+    thumb: "https://picsum.photos/seed/v1/400/225",
+    duration: "12:34", views: "1.2M", time: "2 दिन पहले",
+    category: "entertainment", trending: true, likes: 8420,
+    tgLink: "https://t.me/rajakumar18ni"
+  },
+  {
+    id: 2, title: "Python सीखो 1 घंटे में — Hindi Tutorial",
+    channel: "TechGuru18", avatar: "T",
+    thumb: "https://picsum.photos/seed/v2/400/225",
+    duration: "58:12", views: "890K", time: "5 दिन पहले",
+    category: "education", trending: true, likes: 5200,
+    tgLink: "https://t.me/rajakumar18ni"
+  },
+  {
+    id: 3, title: "Funny Moments — Village Life Comedy 😂",
+    channel: "FunnyMoments", avatar: "F",
+    thumb: "https://picsum.photos/seed/v3/400/225",
+    duration: "8:45", views: "650K", time: "1 हफ्ते पहले",
+    category: "comedy", trending: false, likes: 3100,
+    tgLink: "https://t.me/rajakumar18ni"
+  },
+  {
+    id: 4, title: "New Hindi Song 2025 — Dil Ki Baat 🎵",
+    channel: "MusicWorld", avatar: "M",
+    thumb: "https://picsum.photos/seed/v4/400/225",
+    duration: "4:28", views: "2.1M", time: "3 दिन पहले",
+    category: "music", trending: true, likes: 15000,
+    tgLink: "https://t.me/rajakumar18ni"
+  },
+  {
+    id: 5, title: "Mobile से Paise Kaise Kamaye 2025",
+    channel: "EarnOnline", avatar: "E",
+    thumb: "https://picsum.photos/seed/v5/400/225",
+    duration: "22:10", views: "430K", time: "4 दिन पहले",
+    category: "education", trending: false, likes: 2800,
+    tgLink: "https://t.me/rajakumar18ni"
+  },
+  {
+    id: 6, title: "Best Street Food Tour — Rajasthan 🍜",
+    channel: "FoodLovers", avatar: "F",
+    thumb: "https://picsum.photos/seed/v6/400/225",
+    duration: "18:03", views: "320K", time: "6 दिन पहले",
+    category: "entertainment", trending: false, likes: 1900,
+    tgLink: "https://t.me/rajakumar18ni"
+  }
+];
+
+let currentFilter = 'all';
+let currentVideoId = null;
+let deferredPrompt = null;
+
+// ── RENDER VIDEOS ──
+function renderVideos(filter) {
+  const grid = document.getElementById('videoGrid');
+  const list = filter === 'all' ? videosDB : videosDB.filter(v => v.category === filter || (filter === 'trending' && v.trending));
+  const label = document.querySelector('.trending-label');
+  if (label) label.textContent = filter === 'trending' ? '🔥 Trending Videos' : filter === 'all' ? '🔥 All Videos' : `📂 ${filter.charAt(0).toUpperCase() + filter.slice(1)} Videos`;
+
+  grid.innerHTML = list.map(v => `
+    <div class="video-card" onclick="openPlayer(${v.id})">
+      <div class="video-thumb">
+        <img src="${v.thumb}" alt="${v.title}" loading="lazy" />
+        <span class="video-duration">${v.duration}</span>
+        ${v.trending ? '<span class="trending-crown">🔥 Trending</span>' : ''}
+      </div>
+      <div class="video-info">
+        <div class="video-channel">
+          <div class="channel-avatar">${v.avatar}</div>
+          <span style="font-size:0.8rem; color: var(--text2); font-weight:700">${v.channel}</span>
+        </div>
+        <div class="video-title">${v.title}</div>
+        <div class="video-meta">👁️ ${v.views} &bull; ${v.time}</div>
+      </div>
+      <div class="video-actions">
+        <button class="like-btn" id="like-${v.id}" onclick="event.stopPropagation(); likeVideo(${v.id})">
+          <span class="heart">❤️</span> <span>${formatNum(v.likes)}</span>
+        </button>
+        <button class="share-btn" onclick="event.stopPropagation(); shareVideoItem(${v.id})">🔗 Share</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function formatNum(n) {
+  if (n >= 1000) return (n/1000).toFixed(1) + 'K';
+  return n;
+}
+
+function filterVideos(filter, btn) {
+  currentFilter = filter;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderVideos(filter);
+  scrollToVideos();
+}
+
+function scrollToVideos() {
+  document.getElementById('videoSection').scrollIntoView({ behavior: 'smooth' });
+}
+
+// ── PLAYER ──
+function openPlayer(id) {
+  const v = videosDB.find(x => x.id === id);
+  if (!v) return;
+  currentVideoId = id;
+  document.getElementById('playerTitle').textContent = v.title;
+  document.getElementById('playerLikeCount').textContent = formatNum(v.likes);
+  document.getElementById('playerContent').innerHTML = `
+    <div style="width:100vw; max-width:900px; aspect-ratio:16/9; background:#000; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:16px; color:#fff;">
+      <div style="font-size:3rem">🎬</div>
+      <div style="font-size:1rem; font-weight:700; text-align:center; padding: 0 20px">${v.title}</div>
+      <a href="${v.tgLink}" target="_blank" rel="noopener" class="btn btn-red" style="font-size:0.9rem; padding: 10px 24px;">
+        ▶️ Telegram पर देखें
+      </a>
+      <div style="font-size:0.78rem; color:#888">Video Telegram पर Stored है</div>
+    </div>
+  `;
+  document.getElementById('playerModal').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function closePlayer() {
+  document.getElementById('playerModal').classList.remove('show');
+  document.getElementById('playerContent').innerHTML = '';
+  document.body.style.overflow = '';
+  currentVideoId = null;
+}
+
+function likeCurrentVideo() {
+  if (currentVideoId) likeVideo(currentVideoId);
+}
+
+// ── LIKES ──
+function likeVideo(id) {
+  const v = videosDB.find(x => x.id === id);
+  if (!v) return;
+  v.likes++;
+  const btn = document.getElementById(`like-${id}`);
+  if (btn) {
+    btn.classList.add('liked');
+    btn.querySelector('span:last-child').textContent = formatNum(v.likes);
+  }
+  if (document.getElementById('playerModal').classList.contains('show') && currentVideoId === id) {
+    document.getElementById('playerLikeCount').textContent = formatNum(v.likes);
+  }
+  spawnHeart();
+  showToast('❤️ Liked!');
+}
+
+function spawnHeart() {
+  const h = document.createElement('div');
+  h.className = 'heart-anim';
+  h.textContent = '❤️';
+  h.style.left = (Math.random() * 80 + 10) + 'vw';
+  h.style.top = '60vh';
+  document.body.appendChild(h);
+  setTimeout(() => h.remove(), 1300);
+}
+
+// ── SHARE ──
+function shareVideoItem(id) {
+  const v = videosDB.find(x => x.id === id);
+  if (!v) return;
+  if (navigator.share) {
+    navigator.share({ title: v.title, url: 'https://rajakumar18.in/?v=' + id });
+  } else {
+    navigator.clipboard?.writeText('https://rajakumar18.in/?v=' + id);
+    showToast('🔗 Link Copy हो गया!');
+  }
+}
+
+function shareVideo() {
+  if (currentVideoId) shareVideoItem(currentVideoId);
+}
+
+// ── UPLOAD ──
+function submitUpload() {
+  const title = document.getElementById('uploadTitle').value.trim();
+  const link = document.getElementById('uploadTgLink').value.trim();
+  if (!title || !link) { showToast('⚠️ Title और Link जरूरी है!'); return; }
+  const newV = {
+    id: videosDB.length + 1, title,
+    channel: 'My Channel', avatar: 'U',
+    thumb: document.getElementById('uploadThumb').value || `https://picsum.photos/seed/${Date.now()}/400/225`,
+    duration: document.getElementById('uploadDuration').value || '0:00',
+    views: '0', time: 'अभी',
+    category: document.getElementById('uploadCategory').value,
+    trending: false, likes: 0, tgLink: link
+  };
+  videosDB.unshift(newV);
+  renderVideos(currentFilter);
+  closeModal('uploadModal');
+  showToast('🎉 Video Upload हो गई!');
+}
+
+// ── AUTH TABS ──
+function switchAuthTab(tab) {
+  document.getElementById('loginForm').style.display = tab === 'login' ? 'block' : 'none';
+  document.getElementById('signupForm').style.display = tab === 'signup' ? 'block' : 'none';
+  document.getElementById('loginTab').classList.toggle('active', tab === 'login');
+  document.getElementById('signupTab').classList.toggle('active', tab === 'signup');
+}
+
+// ── MODAL HELPERS ──
+function openModal(id) { document.getElementById(id).classList.add('show'); }
+function closeModal(id) { document.getElementById(id).classList.remove('show'); }
+document.querySelectorAll('[id$="Modal"]').forEach(m => {
+  m.addEventListener('click', e => { if (e.target === m) m.classList.remove('show'); });
+});
+
+// ── PAGE NAVIGATION ──
+function showPage(page) {
+  document.getElementById('mainHome').style.display = 'none';
+  document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+  if (page === 'home') {
+    document.getElementById('mainHome').style.display = 'block';
+  } else {
+    const map = { privacy: 'pagePrivacy', contact: 'pageContact', about: 'pageAbout', terms: 'pageTerms' };
+    const el = document.getElementById(map[page]);
+    if (el) el.classList.add('active');
+  }
+  window.scrollTo(0, 0);
+}
+
+// ── TOAST ──
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// ── PWA INSTALL ──
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('installBanner').classList.add('show');
+});
+
+document.getElementById('installBtn').addEventListener('click', async () => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    if (outcome === 'accepted') showToast('✅ App Install हो गया!');
+    deferredPrompt = null;
+    document.getElementById('installBanner').classList.remove('show');
+  }
+});
+
+// ── SERVICE WORKER REGISTRATION (PWA) ──
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').catch(() => {});
+}
+
+// ── PUSH NOTIFICATION PERMISSION ──
+if ('Notification' in window && Notification.permission === 'default') {
+  setTimeout(() => {
+    Notification.requestPermission().then(p => {
+      if (p === 'granted') showToast('🔔 Notifications ON!');
+    });
+  }, 4000);
+}
+
+// ── INIT ──
+renderVideos('all');
+</script>
+
+</body>
+</html>
