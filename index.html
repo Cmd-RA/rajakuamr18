@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raja Social - YouTube जैसा मज़ा</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">RAJA SOCIAL</div>
+    <div id="userHeader">
+        <button onclick="showLogin()">लॉगिन / रजिस्टर</button>
+    </div>
+</header>
+
+<main>
+    <section id="authBox" class="card">
+        <h3>क्रिएटर लॉगिन</h3>
+        <input type="text" id="phone" placeholder="मोबाइल नंबर">
+        <input type="password" id="pass" placeholder="नया पासवर्ड बनाएं">
+        <button onclick="handleAuth()">प्रवेश करें</button>
+    </section>
+
+    <section id="uploadBox" class="card" style="display:none;">
+        <h3>नया वीडियो डालें</h3>
+        <input type="file" id="videoFile" accept="video/*">
+        <button onclick="uploadVideo()">वीडियो अपलोड करें</button>
+    </section>
+
+    <h2 style="padding:10px;">Trending Videos</h2>
+    <div id="videoContainer" class="grid">
+        <p style="padding:20px;">वीडियो लोड हो रहे हैं...</p>
+    </div>
+</main>
+
+<footer>
+    <a href="#">Privacy Policy</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a>
+    <p>© 2026 Raja Kumar - All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
